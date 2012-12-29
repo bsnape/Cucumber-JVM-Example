@@ -31,7 +31,6 @@ public class MercuryStepdefs {
     @Then("^I get a successful (\\w+) response with the correct (\\w+)$")
     public void I_get_a_successful_type_response_with_the_correct_platform(String type, String platform) throws Throwable {
         String text;
-        response = mercuryRequest.requestMostWatchedFeed(type, platform);
 
         switch (RequestType.valueOf(type.toUpperCase())) {
             case JSON:
